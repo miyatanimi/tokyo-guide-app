@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">Tokyo Guide</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_huge_stations">Stations</string>
+    <string name="title_parks">Parks</string>
+    <string name="title_things_to_do">Things to do</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
