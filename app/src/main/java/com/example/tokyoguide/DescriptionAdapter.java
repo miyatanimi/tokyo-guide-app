@@ -12,9 +12,9 @@ import androidx.annotation.Nullable;
 
 import java.util.List;
 
-public class DiscriptionAdapter extends ArrayAdapter<Discription> {
+public class DescriptionAdapter extends ArrayAdapter<Description> {
 
-    public DiscriptionAdapter(@NonNull Context context, @NonNull List objects) {
+    public DescriptionAdapter(@NonNull Context context, @NonNull List objects) {
         super(context, 0, objects);
     }
 
@@ -26,13 +26,13 @@ public class DiscriptionAdapter extends ArrayAdapter<Discription> {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
         }
-        Discription currentDiscription = getItem(position);
+        Description currentDescription = getItem(position);
 
         TextView nameTextView = listItemView.findViewById(R.id.name);
-        nameTextView.setText(currentDiscription.getName());
+        nameTextView.setText(currentDescription.getName());
 
         TextView descriptionTextView = listItemView.findViewById(R.id.description);
-        descriptionTextView.setText(currentDiscription.getDescription());
+        descriptionTextView.setText(currentDescription.getDescription());
 
         return listItemView;
     }
