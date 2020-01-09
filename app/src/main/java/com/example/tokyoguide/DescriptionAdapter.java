@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -33,6 +34,9 @@ public class DescriptionAdapter extends ArrayAdapter<Description> {
 
         TextView descriptionTextView = listItemView.findViewById(R.id.description);
         descriptionTextView.setText(currentDescription.getDescription());
+
+        ImageView imageView = listItemView.findViewById(R.id.image);
+        imageView.setImageResource(currentDescription.getImageId());
 
         return listItemView;
     }
