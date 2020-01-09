@@ -33,6 +33,13 @@ public class HomeFragment extends Fragment {
                 textView.setText(s);
             }
         });
+        final TextView overview = root.findViewById(R.id.overview);
+        overview.setText("Hello! This app will introduce spots in Tokyo with my prejudice and personal opinions.\n" +
+                "This has 3 sections. The first part is large stations in Tokyo, the second is great parks in Tokyo, and the last one is things to do in Tokyo.\n" +
+                "Every section doesn't have so useful info for tourists, but I think you don't know that local info. Enjoy!");
+        final TextView question = root.findViewById(R.id.question);
+        question.setText("If you have questions, don't hesitate to reach me!\n" +
+                "Twitter @dev_mitani");
         return root;
     }
 }
